@@ -1,0 +1,27 @@
+Index creation:
+--------------
+curl -u 'user:pass' -X PUT "https://search-searchdomain-ko7qzpgwxn2ccfufojsvmpegd4.us-east-1.es.amazonaws.com/restaurants?pretty"
+
+
+
+Inedxing Single Doc:
+-------------------
+curl -XPUT -u user:pass '<ES_URL>/<ES_INDEX>/_doc/1' -d '{"director": "Burton, Tim", "genre": ["Comedy","Sci-Fi"], "year": 1996, "actor": ["Jack Nicholson","Pierce Brosnan","Sarah Jessica Parker"], "title": "Mars Attacks!"}' -H 'Content-Type: application/json'
+
+
+
+Bulk Loading of Data:
+---------------------
+curl -XPOST -u 'user:pass' 'https://search-searchdomain-ko7qzpgwxn2ccfufojsvmpegd4.us-east-1.es.amazonaws.com/restaurants/Restaurant/_bulk?pretty' --data-binary combined.json -H 'Content-Type: application/json'
+
+
+
+
+
+
+Search Index:
+-------------
+curl -XGET -u 'user:pass' 'https://search-searchdomain-ko7qzpgwxn2ccfufojsvmpegd4.us-east-1.es.amazonaws.com/restaurants/Restaurant/_search?q=rebel&pretty=true'
+
+
+<ES_URL>/_search?pretty=true
