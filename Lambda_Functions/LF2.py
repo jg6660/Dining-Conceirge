@@ -12,8 +12,8 @@ sns = boto3.client('sns')
 dynamodb = boto3.resource('dynamodb')
 
 
-access_key = "AKIA2S2WMNE4G7K2H47J"
-secret_key = "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"
+access_key = ""
+secret_key = ""
 host = "search-searchdomain-ko7qzpgwxn2ccfufojsvmpegd4.us-east-1.es.amazonaws.com"
 region = 'us-east-1'
 service = "es"
