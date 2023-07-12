@@ -8,7 +8,7 @@ import json
 
 url = "https://api.yelp.com/v3/businesses/search"
 # Define my API Key, My Endpoint, and My Header
-API_KEY = 'ubm29Gpu_xxxrlENS2eQjWQTF4Es_xiNMakmY0DI4MBDE0_Mkq1-Tr6seoDlJgzJiZC1ZO0M8GtJOeR8MXTf3crSsfr7x5jLlN58sTI8k6BnH08hmvtzsz_dsvAbYnYx'
+API_KEY = ''
 #ENDPOINT = 'https://api.yelp.com/v3/businesses/{}/reviews'.format(business_id)
 ENDPOINT = 'https://api.yelp.com/v3/businesses/search'
 HEADERS = {'Authorization': 'bearer %s' % API_KEY}
